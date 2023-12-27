@@ -6,7 +6,7 @@ Lastly, the training and testing programs are included for model creation, train
 
 The following are instructions for use of the Minesweeper game, environment, and PPO model included in this zip file. First some libraries need to be downloaded: gymnasium, numpy, and stable_baselines3.
 
-Once all three of the above libraries (and their dependencies) have been installed, minesweeper_env.py will need to be registered in the gymnasium library. Navigate to where the Gymnasium library code was stored. For example, the path may look like “C:\Users\_____\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium”. Once inside of the Gym library, navigate to the envs directory. Once there, navigate to the classic_control directory. Paste minesweeper_env into this directory. Next, the file __init__.py inside of the classic_control directory will need to be edited to include this line:
+Once all three of the above libraries (and their dependencies) have been installed, minesweeper_env.py will need to be registered in the gymnasium library. Navigate to where the Gymnasium library code was stored. For example, the path may look like: <pre>C:\Users\ example \AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium</pre> Once inside of the Gymnasium library, navigate to the envs directory. Once there, navigate to the classic_control directory. Paste minesweeper_env into this directory. Next, the file __init__.py inside of the classic_control directory will need to be edited to include this line:
 from gymnasium.envs.classic_control.minesweeper_env import MinesweeperEnv
 
 Then, navigate back to the envs directory and edit its __init__.py file by adding the following: 
