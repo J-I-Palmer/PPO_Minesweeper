@@ -4,20 +4,17 @@ This is a series of programs that implement OpenAI's Proximal Policy Optimizatio
 Present are two different versions of Minesweeper that can be played by a user or used to train a model. Additionally, a Gymnasium environment that provides the interface for interaction between the model and the Minesweeper program is included.
 Lastly, the training and testing programs are included for model creation, training, and testing.
 
-The following are instructions for use of the Minesweeper game, environment, and PPO model included in this zip file. First some libraries need to be downloaded:
-•	pip install gymnasium
-•	pip install numpy
-•	pip install stable_baselines3
+The following are instructions for use of the Minesweeper game, environment, and PPO model included in this zip file. First some libraries need to be downloaded: gymnasium, numpy, and stable_baselines3.
 
 Once all three of the above libraries (and their dependencies) have been installed, minesweeper_env.py will need to be registered in the gymnasium library. Navigate to where the Gymnasium library code was stored. For example, the path may look like “C:\Users\_____\AppData\Local\Programs\Python\Python311\Lib\site-packages\gymnasium”. Once inside of the Gym library, navigate to the envs directory. Once there, navigate to the classic_control directory. Paste minesweeper_env into this directory. Next, the file __init__.py inside of the classic_control directory will need to be edited to include this line:
 from gymnasium.envs.classic_control.minesweeper_env import MinesweeperEnv
 
 Then, navigate back to the envs directory and edit its __init__.py file by adding the following: 
-register(
-    id='MinesweeperEnv-v0',
-    entry_point="gymnasium.envs.classic_control.minesweeper_env:MinesweeperEnv",
-    max_episode_steps=1000,
-)
+<pre>register(
+id='MinesweeperEnv-v0',
+entry_point="gymnasium.envs.classic_control.minesweeper_env:MinesweeperEnv",
+max_episode_steps=1000,
+)</pre>
 
 This will register the Minesweeper environment under the name “MinesweeperEnv-v0”. Now that the environment has been registered, the PPO model programs can be run. 
 
