@@ -11,9 +11,9 @@ from gymnasium.envs.classic_control.minesweeper_env import MinesweeperEnv
 
 Then, navigate back to the envs directory and edit its __init__.py file by adding the following: 
 <pre>register(
-id='MinesweeperEnv-v0',
-entry_point="gymnasium.envs.classic_control.minesweeper_env:MinesweeperEnv",
-max_episode_steps=1000,
+  id='MinesweeperEnv-v0',
+  entry_point="gymnasium.envs.classic_control.minesweeper_env:MinesweeperEnv",
+  max_episode_steps=1000,
 )</pre>
 
 This will register the Minesweeper environment under the name “MinesweeperEnv-v0”. Now that the environment has been registered, the PPO model programs can be run. 
