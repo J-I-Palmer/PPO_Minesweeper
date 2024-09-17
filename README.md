@@ -1,5 +1,5 @@
 # PPO_Minesweeper
-This is a series of programs that implement OpenAI's Proximal Policy Optimization algorithms in order to create a model that can play the game of Minesweeper.
+This is a suite of programs that implements OpenAI's Proximal Policy Optimization algorithms in order to create a model that can play the game of Minesweeper.
 
 Present are two different versions of Minesweeper that can be played by a user or used to train a model. Additionally, a Gymnasium environment that provides the interface for interaction between the model and the Minesweeper program is included.
 Lastly, the training and testing programs are included for model creation, training, and testing.
